@@ -1,0 +1,56 @@
+Feature: summa # features/feature_files/testDIR/test.feature:1
+
+  Scenario Outline: test -- @1.1                          # features/feature_files/testDIR/test.feature:15
+    Given the URL is opened                               # features/steps/demoNocucu_steps.py:26
+    Then Click gender                                     # features/steps/demoNocucu_steps.py:36
+      Traceback (most recent call last):
+        File "C:\Users\raghunath_b\PycharmProjects\Web_Automation_Framework\.venv\Lib\site-packages\behave\model.py", line 1329, in run
+          match.run(runner.context)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^
+        File "C:\Users\raghunath_b\PycharmProjects\Web_Automation_Framework\.venv\Lib\site-packages\behave\matchers.py", line 98, in run
+          self.func(context, *args, **kwargs)
+          ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "features\steps\demoNocucu_steps.py", line 38, in step_then
+          context.utils.tap_element_simple(context.driver, context.page.gender_male, 100)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Users\raghunath_b\PycharmProjects\Web_Automation_Framework\features\page_object\demoNocucu_page.py", line 27, in gender_male
+          return self.driver.find_element(By.ID, "male")
+                 ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+        File "C:\Users\raghunath_b\PycharmProjects\Web_Automation_Framework\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 922, in find_element
+          return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+                 ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        File "C:\Users\raghunath_b\PycharmProjects\Web_Automation_Framework\.venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in execute
+          self.error_handler.check_response(response)
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^
+        File "C:\Users\raghunath_b\PycharmProjects\Web_Automation_Framework\.venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+          raise exception_class(message, screen, stacktrace)
+      selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+      from unknown error: web view not found
+        (Session info: chrome=138.0.7204.159)
+      Stacktrace:
+      	GetHandleVerifier [0x0x7ff7f5626f95+76917]
+      	GetHandleVerifier [0x0x7ff7f5626ff0+77008]
+      	(No symbol) [0x0x7ff7f53d9dea]
+      	(No symbol) [0x0x7ff7f53b2191]
+      	(No symbol) [0x0x7ff7f545f83e]
+      	(No symbol) [0x0x7ff7f547ff72]
+      	(No symbol) [0x0x7ff7f5458243]
+      	(No symbol) [0x0x7ff7f5421431]
+      	(No symbol) [0x0x7ff7f54221c3]
+      	GetHandleVerifier [0x0x7ff7f58fd2cd+3051437]
+      	GetHandleVerifier [0x0x7ff7f58f7923+3028483]
+      	GetHandleVerifier [0x0x7ff7f59158bd+3151261]
+      	GetHandleVerifier [0x0x7ff7f564185e+185662]
+      	GetHandleVerifier [0x0x7ff7f564971f+218111]
+      	GetHandleVerifier [0x0x7ff7f562fb14+112628]
+      	GetHandleVerifier [0x0x7ff7f562fcc9+113065]
+      	GetHandleVerifier [0x0x7ff7f5616c98+10616]
+      	BaseThreadInitThunk [0x0x7fff1777e8d7+23]
+      	RtlUserThreadStart [0x0x7fff184dc34c+44]
+
+    Then Enter your full name "Sample sheet 1"            # None
+    Then Enter your Email "Sample sheet 1"                # None
+    Then Enter your phonenumber "Sample sheet 1"          # None
+    Then Scroll until visible and enter name in section 1 # None
+    Then close the driver                                 # None
+

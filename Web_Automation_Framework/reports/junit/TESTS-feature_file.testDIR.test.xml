@@ -1,0 +1,23 @@
+<testsuite name="feature_file.testDIR.test.summa" tests="1" errors="0" failures="0" skipped="0" time="12.825998" timestamp="2025-07-24T14:33:30.892531" hostname="CHL146869"><testcase classname="feature_file.testDIR.test.summa" name="test -- @1.1 " status="passed" time="12.825998"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: test -- @1.1 
+    Given the URL is opened ... passed in 7.406s
+    Then Click gender ... passed in 2.164s
+    Then Enter your full name "Sample sheet 1" ... passed in 0.161s
+    Then Enter your Email "Sample sheet 1" ... passed in 0.177s
+    Then Enter your phonenumber "Sample sheet 1" ... passed in 0.200s
+    Then Scroll until visible and enter name in section 1 ... passed in 2.390s
+    Then close the driver ... passed in 0.328s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+type of sheet is string
+type of sheet is string
+type of sheet is string
+type of sheet is string
+
+]]>
+</system-out></testcase></testsuite>

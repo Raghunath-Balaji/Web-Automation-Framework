@@ -1,0 +1,21 @@
+<testsuite name="testDIR.test.summa" tests="1" errors="0" failures="1" skipped="0" time="0.0" timestamp="2025-07-24T14:06:02.311375" hostname="CHL146869"><testcase classname="testDIR.test.summa" name="test -- @1.1 " status="failed" time="0"><failure type="NoneType" message="None">
+<![CDATA[
+Failing step: Given the URL is opened ... undefined in 0.000s
+Location: resources/features/testDIR/test.feature:4
+None]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: test -- @1.1 
+    Given the URL is opened ... undefined in 0.000s
+    Then Click gender ... undefined in 0.000s
+    Then Enter your full name "Sample sheet 1" ... undefined in 0.000s
+    Then Enter your Email "Sample sheet 1" ... undefined in 0.000s
+    Then Enter your phonenumber "Sample sheet 1" ... undefined in 0.000s
+    Then Scroll until visible and enter name in section 1 ... undefined in 0.000s
+    Then close the driver ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
